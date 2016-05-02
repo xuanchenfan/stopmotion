@@ -43,7 +43,7 @@ text-align: center;
 font-family:  'Raleway',sans-serif;
 font-weight: normal;
 text-transform: uppercase;
-text-shadow: 2px 2px 0 #000,
+text-shadow: 2px 2px 0 #000;
 margin-top: -100px;}
 
 
@@ -62,12 +62,13 @@ div.move :hover {
   background: #000;
 transition: background 1s ease-in;
 }
-ul {display: inline-block;
-style:none;}
+ul {
+  display: inline-block;
+}
  .move {
   border: 1px solid #ccc;
   width:160px;
-  height:275px
+  height:275px;
   background: url("img/10620_front.jpg") no-repeat;
   opacity: 0.5;
   transition: opacity 1s ease-in;
@@ -80,7 +81,7 @@ style:none;}
 .move {
   border: 1px solid #ccc;
   width:160px;
-  height:275px
+  height:275px;
   background: url("img/Corpse.jpg") no-repeat;
   opacity: 0.5;
   transition: opacity 1s ease-in;
@@ -110,8 +111,9 @@ margin-right: 200px;
 #animation li a{color:white;
 text-decoration: none;}
 #animation li a:hover{
-  color: #FF5733
+  color:#FF5733
 }
+
 img a:{
  padding:50px;
 }
@@ -168,7 +170,7 @@ font-family: 'Helvetica Neue', sans-serif;
 li.move {
   border: 1px solid #ccc;
   width:160px;
-  height:275px
+  height:275px;
   background: url("10620_front.jpg") no-repeat;
   opacity: 0.5;
   transition: opacity 1s ease-in;
@@ -181,5 +183,40 @@ li.move.hover {
 
 .movie {
  list-style: none;
+}
+.wrap {
+  padding: 5em 0.5em;
+  margin: 0 auto;
+}
 
+h1 {
+  margin-top: 0px;
+  text-align: center;
+  font-weight: normal;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 8em;
+  white-space: nowrap;
+  font-size: 12vw;
+  z-index: 1000;
+  font-family: 'Bangers', cursive;
+  text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7);
+  -moz-transform: skew(0, -6.7deg);
+  -ms-transform: skew(0, -6.7deg);
+  -webkit-transform: skew(0, -6.7deg);
+  transform: skew(0, -6.7deg);
+  -moz-transition-property: font-size;
+  -o-transition-property: font-size;
+  -webkit-transition-property: font-size;
+  transition-property: font-size;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 50em) {
+  h1 {
+    font-size: 20vw;
+  }
 }
