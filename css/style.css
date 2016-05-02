@@ -135,8 +135,9 @@ margin-top: 10px
  div.ls {margin-top: 15px;
  font-family: 'Helvetica Neue', sans-serif;
 }
-li.ls {color:white;
-}
+.ls {color:white;
+ text-align: right;
+margin-right: 20px;}
 h2.a:link {
   text-decoration: none;
 }
