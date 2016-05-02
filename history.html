@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body background="img/restaurant.png">
+
+    <div class="circle1">
+    <svg height="100" width="100">
+      <circle cx="50" cy="50" r="40" stroke="FAFC03" stroke-width="3" fill="#FFE701" />
+    </svg>
+    <p class="home"><a href="index.html">Home</a></p>
+    </div>
+
+    <div class="circle2">
+    <svg height="100" width="100">
+      <circle cx="50" cy="50" r="40" stroke="#03FCE0" stroke-width="3" fill="#03FCCB" />
+    </svg>
+    <p class="home"><a href="history.html">History</a></p>
+    </div>
+
+<content>
+    <ul id="animation">
+      <li><a href="#" id="one">1898</a></li>
+      <li><a href="#" id="two">1960s</a></li>
+      <li><a href="#" id="three">1980s</a></li>
+      <li><a href="#" id="present">Present</a></li>
+    </ul>
+</content>
+
+
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4yfYBzvcTjo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+    <div class="circle3">
+    <svg height="100" width="100">
+      <circle cx="50" cy="50" r="40" stroke="#E99C72" stroke-width="3" fill="#E99472" />
+    </svg>
+    <p class="home"><a href="Movies.html">Movies</a></p>
+    </div>
+
+    <div class="circle4">
+    <svg height="100" width="100">
+      <circle cx="50" cy="50" r="40" stroke="#00D9FB" stroke-width="3" fill="#00F3FB" />
+    </svg>
+    <p class="home"><a href="Artists.html">Artists</a></p>
+  </div>
+  <script>
+
+      var movieOptions = document.querySelector("content");
+      var movie = document.querySelector("iframe");
+
+
+
+      var movies = {
+        one: "32UrJq8m-0Q",
+        two:"DyLHedkQbCw",
+        three: "eiBdHMlyBWA",
+        present:"4yfYBzvcTjo",
+      }
+
+      movieOptions.addEventListener("click", function(e) {
+
+
+        var movieSelected = movies[event.target.id];
+        var url = "https://www.youtube-nocookie.com/embed/" + movieSelected + "?rel=0&amp;showinfo=0"
+
+
+        movie.setAttribute("src", url);
+
+      });
+
+
+  </script>
+</body>
+</html>
